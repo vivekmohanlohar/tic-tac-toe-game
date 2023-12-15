@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe Game - Play and Enjoy</title>
+  <meta name="description" content="Play the classic Tic Tac Toe game online for free. Enjoy a fun and challenging gaming experience.">
+  <meta name="keywords" content="Tic Tac Toe, online game, free game, multiplayer game, board game, fun game,Tik Tak Toe Vivek Lohar, Vivek Mohan Lohar, challenge friends">
+  <!-- Open Graph meta tags for social media sharing -->
+  <meta property="og:title" content="Tic Tac Toe Game">
+  <meta property="og:description" content="Play the classic Tic Tac Toe game online. Enjoy a fun and challenging gaming experience.">
+  <meta property="og:url" content="https://vivekmohanlohar.github.io/tic-tac-toe-game">
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+  <!-- Your stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Tic Tac Toe Game",
+      "url": "https://yourwebsite.com/tic-tac-toe-game"
+    }
+  </script>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Tic Tac Toe</h1>
+    <div class="board" id="board">
+      <div class="cell" data-index="0"></div>
+      <div class="cell" data-index="1"></div>
+      <div class="cell" data-index="2"></div>
+      <div class="cell" data-index="3"></div>
+      <div class="cell" data-index="4"></div>
+      <div class="cell" data-index="5"></div>
+      <div class="cell" data-index="6"></div>
+      <div class="cell" data-index="7"></div>
+      <div class="cell" data-index="8"></div>
+    </div>
+    <div class="message" id="message">Player X's turn</div>
+    <button class="reset-button" onclick="resetGame()">Restart Game</button>
+  </div>
+  <footer>
+    Designed and Developed By <br>
+    <h2>Vivek Lohar</h2> <br><br>
+    <ul class="social_media">
+      <a href="https://vivekmohanlohar.github.io/viveklohar/" data-aos="fade-up" data-aos-offset="0" data-aos-delay="5000"><i class="fa-solid fa-globe"></i></a> &nbsp;
+      <a href="https://github.com/vivekmohanlohar" data-aos="fade-" data-aos-offset="0" data-aos-delay="5000"><i class="fa-brands fa-github"></i></a>&nbsp;
+      <a href="https://in.linkedin.com/in/vivekmohanlohar" data-aos="fade-up" data-aos-offset="0" data-aos-delay="5000"><i class="fa-brands fa-linkedin-in"></i></a>&nbsp;
+      <a href="https://www.instagram.com/vivekmohanlohar/" data-aos="fade-up" data-aos-offset="0" data-aos-delay="5000"><i class="fa-brands fa-instagram"></i></a>
+    </ul>
+  </footer>
+
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <p id="winnerIcon"></p>
+      <p id="winnerName"></p>
+      <button onclick="resetGame()">Play Again</button>
+    </div>
+  </div>
+  <audio id="xSound" src="x_turn_sound.mp3"></audio>
+  <audio id="oSound" src="o_turn_sound.mp3"></audio>
+  <audio id="winSound" src="win_sound.mp3"></audio>
+  <audio id="drawSound" src="draw_sound.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
